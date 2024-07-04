@@ -7,7 +7,6 @@ This project provides a reusable library for implementing ERC-1155 compliant mul
 The library includes:
 
 - Core ERC-1155 implementation (`ERC1155Base.sol`)
-- Extended ERC-1155 functionality (`ERC1155.sol`)
 - Storage schema for ERC-1155 tokens (`Schema.sol`)
 - Storage access utilities (`Storage.sol`)
 - An example implementation of a multi-token contract (`MyMultiToken.sol`)
@@ -22,11 +21,11 @@ To use this library in your metacontract project:
    ```
 2. Import the necessary contracts in your Solidity files:
    ```solidity
-   import { ERC1155 } from "ecdysisxyz/erc1155/src/main/functions/ERC1155.sol";
+   import { ERC1155Base } from "ecdysisxyz/erc1155/src/main/functions/ERC1155Base.sol";
    import { Schema as ERC1155Schema } from "ecdysisxyz/erc1155/src/main/storage/Schema.sol";
    import { Storage as ERC1155Storage } from "ecdysisxyz/erc1155/src/main/storage/Storage.sol";
    ```
-3. Extend the `ERC1155` contract and implement your custom logic.
+3. Extend the `ERC1155Base` contract and implement your custom logic.
 
 ## Example
 
